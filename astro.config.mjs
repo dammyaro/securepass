@@ -18,14 +18,14 @@ export default defineConfig({
         {
           label: 'Guides',
           items: [
-            { label: 'Setup', link: '/guides/setup/' },,
-            { label: 'Contributing', link: '/guides/contributing/' },,
+            { label: 'Setup', slug: 'guides/setup' },
+            { label: 'Contributing', slug: 'guides/contributing' },
           ],
         },
         {
           label: 'Reference',
           items: [
-            { label: 'API', link: '/reference/api/' },,
+            { label: 'API', slug: 'reference/api' },
           ],
         },
       ],
