@@ -232,7 +232,7 @@ body.light-mode .toast {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: calc(env(safe-area-inset-top, 20px)) 20px 20px;
     z-index: 100;
 }
 
@@ -276,7 +276,7 @@ body.light-mode .logo {
 
 @media (max-width: 500px) {
     .header {
-        padding: 15px;
+        padding: calc(env(safe-area-inset-top, 15px)) 15px 15px;
     }
 
     .logo {
@@ -288,8 +288,8 @@ body.light-mode .logo {
     }
 
     .chrome-extension-btn {
-        font-size: 0.8rem;
-        padding: 8px 15px;
+        font-size: 0.9rem;
+        padding: 12px 18px;
     }
 
     .container {
