@@ -232,7 +232,7 @@ body.light-mode .toast {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: calc(env(safe-area-inset-top, 20px)) 20px 20px;
+    padding: 60px 20px 20px;
     z-index: 100;
 }
 
@@ -276,7 +276,7 @@ body.light-mode .logo {
 
 @media (max-width: 500px) {
     .header {
-        padding: calc(env(safe-area-inset-top, 15px)) 15px 15px;
+        padding: 15px;
     }
 
     .logo {
