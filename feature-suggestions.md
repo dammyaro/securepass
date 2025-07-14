@@ -1,0 +1,12 @@
+1. Password Length Slider: Allow users to choose the length of their password, from a short, insecure length to a much longer, more secure one.
+2. Character Set Options: Add checkboxes to let users include or exclude character types like uppercase letters, lowercase letters, numbers, and symbols.
+3. "Copy to Clipboard" Toast Notification: Display a small, temporary message (a "toast") that confirms the password has been copied to the clipboard, providing better user feedback.
+4. Password History: Keep a short history of the last few generated passwords, in case the user accidentally generates a new one before saving the previous one.
+5. Dark/Light Mode Toggle: Add a button to switch between dark and light themes.
+6. Regenerate on Enter Key: Allow users to press the Enter key to generate a new password.
+7. Passphrase Generator: Instead of random characters, provide an option to generate a memorable passphrase made of several random words (e.g., "tree-battery-correct-staple"). This is often easier for humans to remember while still being very secure.
+8. Time-to-Crack Estimate: Display a simple calculation of how long it would theoretically take a standard computer to brute-force the generated password. This provides a more tangible sense of security than a simple "strong" or "weak" label.
+9. Hide/Reveal Password Toggle: Add an "eye" icon that allows the user to toggle the password's visibility between plain text and dots (••••••••). This is a standard privacy feature, useful if others are nearby.
+10. Security Tip Display: Show a new, helpful security tip with each generated password (e.g., "Enable two-factor authentication," "Avoid using public Wi-Fi for sensitive accounts," "Use a password manager"). This adds educational value with minimal effort.
+11. Generate QR Code: Add a button to generate a QR code for the current password. This makes it incredibly easy for a user to transfer a long, complex password from their desktop screen to their mobile device's camera.
+12. Download as a Text File: Add a "Download" button that saves the currently displayed password to a simple .txt file. This provides a quick, offline way to save a password before transferring it to a password manager.
