@@ -9,9 +9,21 @@ import '../styles/styles.css';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SecurePass</title>
-    
+    <link rel="icon" href="/securepass/favicon.svg" type="image/svg+xml">
 </head>
 <body>
+    <header class="header">
+        <div class="logo">
+            <img src="/securepass/logo.svg" alt="SecurePass Logo">
+        </div>
+                <div class="header-controls">
+            <button id="themeToggle" class="theme-toggle-button">
+                <img src="/securepass/sun.svg" alt="Light Mode" class="theme-icon light">
+                <img src="/securepass/moon.svg" alt="Dark Mode" class="theme-icon dark">
+            </button>
+            <a href="#" class="chrome-extension-btn">Download Chrome extension</a>
+        </div>
+    </header>
     <div class="center-content">
         <h1 class="app-title">SecurePass</h1>
         <div class="subtitle">Generate strong, random passwords instantly.</div>
@@ -108,6 +120,23 @@ import '../styles/styles.css';
             }
 
             generatePassword();
+
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    document.body.classList.toggle('light-mode');
+
+                    // Update icon visibility
+                    const isLightMode = document.body.classList.contains('light-mode');
+                    localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+                });
+
+                // Check for saved theme preference
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'light') {
+                    document.body.classList.add('light-mode');
+                }
+            }
         });
     </script>
 </body>
